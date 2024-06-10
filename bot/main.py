@@ -1,8 +1,7 @@
-import os
+from config import BOT_API
 from telebot import TeleBot, types
 
-bot_token = os.environ.get('BOT_API')
-bot = TeleBot(token=bot_token)
+bot = TeleBot(token=BOT_API)
 
 
 @bot.message_handler(commands=['start'])
