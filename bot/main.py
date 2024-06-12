@@ -54,5 +54,3 @@ def main_keyboard(message: types.Message) -> None:
 
 
 bot.polling()
-
-#  men comment qo'shdim
