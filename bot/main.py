@@ -20,7 +20,7 @@ bot = TeleBot(token=BOT_API)
 
 @bot.message_handler(commands=['start'])
 def buttons_show(message: types.Message) -> None:
-	text: str = ("Quyidagilardan birini tanlang 👇")
+	text: str = "Quyidagilardan birini tanlang 👇"
 	bot.send_message(message.from_user.id, text=text, reply_markup=buttons.main_keyboard)
 
 
