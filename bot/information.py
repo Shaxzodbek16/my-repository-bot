@@ -1,12 +1,20 @@
-shaxzodbek = "info shaxzodbek"
-people = "info people"
-wish = " info wish"
-study = "info study"
-family = "info family"
-friend = "info friend"
-game = "info game"
-love = "info love"
-Copilot = "info catGPT"
-Gemini = "info gemini"
-ChatGPT = "info chatGPT"
-default = "info default"
+from readAPI import information
+
+
+def shaxzodbek(page: int, category: str = None):
+	if category is None:
+		return information(page, "shaxzodbek")
+	return information(page, "shaxzodbek", category)
+
+
+def people(page: int):
+	return information(page, "person")
+
+
+def wish(page: int):
+	return information(page, "wish")
+
+
+if __name__ == '__main__':
+	a = wish(0)
+	print(a["title"])
