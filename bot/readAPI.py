@@ -16,3 +16,7 @@ def information(pk: int, next_api: str, category: str = None) -> dict:
 		return data[pk]
 	except IndexError:
 		return {"message": f"{pk} not found in {next_api}'s category"}
+
+
+if __name__ == "__main__":
+	pass
